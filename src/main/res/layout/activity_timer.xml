@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopwatchScreen">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setTime_button"
+        android:layout_width="217dp"
+        android:layout_height="67dp"
+        android:background="@drawable/timer_button_bg"
+        android:text="SET TIME"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.719" />
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="45dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/timerIcon_button1"
+        android:layout_width="39dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/timer"
+        android:contentDescription="Reset"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/backButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/timerIcon_button2"
+        android:layout_width="39dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/timer"
+        android:contentDescription="Reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="96dp"
+        android:text="T I M E R"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="238dp"
+        android:layout_height="226dp"
+        android:elevation="10dp"
+        android:outlineSpotShadowColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382"
+        app:srcCompat="@drawable/timer_spinner" />
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="160dp"
+        android:layout_height="79dp"
+        android:text="00.00"
+        android:textAlignment="center"
+        android:textSize="44dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintEnd_toEndOf="@+id/appCompatImageView"
+        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintStart_toStartOf="@+id/appCompatImageView"
+        app:layout_constraintTop_toTopOf="@+id/appCompatImageView"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <ImageButton
+        android:id="@+id/playButton"
+        android:layout_width="58dp"
+        android:layout_height="61dp"
+        android:background="@drawable/timer_play"
+        android:contentDescription="Start"
+        app:circularflow_defaultRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset_button"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageButton
+        android:id="@+id/reset_button"
+        android:layout_width="63dp"
+        android:layout_height="62dp"
+        android:background="@drawable/baseline_restore_24"
+        android:contentDescription="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/playButton"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView"
+        app:layout_constraintVertical_bias="0.699" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

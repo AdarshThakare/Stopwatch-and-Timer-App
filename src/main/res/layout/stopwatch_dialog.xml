@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="450dp">
+
+    <TextView
+        android:id="@+id/dialog_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SET TIME TO START:"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.139" />
+
+
+    <TextView
+        android:id="@+id/colon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/done"
+        app:layout_constraintEnd_toStartOf="@+id/secs_picker"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/mins_picker"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_text" />
+
+    <NumberPicker
+        android:id="@+id/secs_picker"
+        android:layout_width="77dp"
+        android:layout_height="173dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colon"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_text"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <NumberPicker
+        android:id="@+id/mins_picker"
+        android:layout_width="77dp"
+        android:layout_height="173dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/colon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_text"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/done"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_bg"
+        android:text="Done"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

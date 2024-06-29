@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+      <item>
+      <vector
+          android:width="125dp"
+          android:height="133dp"
+          android:viewportWidth="125"
+          android:viewportHeight="133">
+            <path
+                android:pathData="M31,7L94,7A24,24 0,0 1,118 31L118,102A24,24 0,0 1,94 126L31,126A24,24 0,0 1,7 102L7,31A24,24 0,0 1,31 7z"
+                android:strokeWidth="2"
+                android:strokeColor="#545454"
+                android:fillColor="#202020"
+                />
+      </vector>
+</item>
+    </layer-list>
+
